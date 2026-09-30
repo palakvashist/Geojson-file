@@ -1,43 +1,31 @@
-# Interconnected Places — Project Template
+# Interconnected Places — [Your Project Title]
 
-This is the starter repository for your spatial history project. Everything you need is already here. You will not build this from scratch — you'll swap in your own place.
+This repository holds my spatial history project for the Interconnected Places Lab (HIST 1907). It maps one place and the places it was connected to.
 
-## What's in here
+## About this project
 
-- **`index.html`** — the map. You edit three small spots inside it (they're marked `EDIT ZONE`).
-- **`data.geojson`** — the sample data. You replace this with the file you export from QGIS or geojson.io.
-- **`README.md`** — this file. Rewrite it to describe your own project.
+*(Replace this with a sentence or two about your own place: what it is, the time period, and what its main connections are.)*
 
-## The whole workflow
+Example: This project maps Bombay in the late nineteenth century and the network of places its cotton-textile industry connected it to — across Maharashtra and around the Indian Ocean world.
 
-```
-Research  →  QGIS / geojson.io  →  data.geojson  →  GitHub  →  index.html  →  GitHub Pages
-```
+## The files
 
-You make the data, drop it in this folder, and the map reads it. That's it.
+- **`index.html`** — the interactive map. Your places are written inside this file, so this is the file you edit to make the map your own.
+- **`README.md`** — this page (the front page of the repository on GitHub).
 
-## How to make it your map
+## How to view the map
 
-1. **Export your features** as GeoJSON from QGIS (Week 5–7) or geojson.io. Give every feature a **Name**, **Date**, and **Description** — those are the three columns the popups read.
-2. **Rename your export to `data.geojson`** and put it in this folder, replacing the sample.
-3. **Open `index.html`** in a text editor (VS Code is free). Change the title in `EDIT ZONE 1` and `EDIT ZONE 2`, and set your map's opening location in `EDIT ZONE 3`.
-4. **Preview it.** See the note below — don't just double-click the file.
-5. **Push to GitHub and turn on Pages** (Week 8 and Week 12) to get a live public link.
+- Open the folder in VS Code and use the **Live Server** extension (right-click `index.html` → *Open with Live Server*), or
+- Turn on **GitHub Pages** (Settings → Pages → main branch) to get a public link anyone can visit.
 
-## ⚠️ One thing that trips everyone up
+## The place fields
 
-If you **double-click `index.html`** to open it, the map will load but your data probably won't — you'll see a yellow warning box. That's normal and it's not your fault. Browsers block data files from loading off a bare `file://` address.
+Every place has three pieces of information, spelled exactly this way:
 
-Two fixes, either works:
-- **Install the "Live Server" extension in VS Code**, right-click `index.html`, choose "Open with Live Server." (Best for previewing while you work.)
-- **Push to GitHub Pages.** On a real web address, the data loads automatically with no extra steps.
+- **Name** — what the place is called
+- **Date** — when it existed
+- **Description** — one or two sentences of history
 
-## The data columns (keep these exact)
+## My live map
 
-| Column | What goes in it | Example |
-|---|---|---|
-| `Name` | What the feature is called | `Fort Pitt` |
-| `Date` | When it existed (plain text is fine) | `1761` or `19th century` |
-| `Description` | 1–3 sentences of history | `British fort built after...` |
-
-Same three columns for points, lines, and polygons.
+*(After you turn on GitHub Pages, paste your public link here.)*
